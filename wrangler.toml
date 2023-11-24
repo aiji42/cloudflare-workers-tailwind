@@ -1,6 +1,11 @@
 name = "cloudflare-workers-tailwind"
-main = "src/index.ts"
+main = "dist/index.js"
 compatibility_date = "2023-11-21"
+node_compat = true
+
+[build]
+command = "yarn build"
+watch_dir = "./src"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
